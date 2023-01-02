@@ -1,5 +1,7 @@
-# The Default Helix Layout
+# The Lance Helix Layout
 ## Layout
+
+This layout was inspired by time spent with the Planck and CRKBD (Corne) boards. It adapts a lower layer that contains all numbers and symbols, and places arrow keys at the resting position of the right hand on the raise layer. @
 
 ### Qwerty
 
