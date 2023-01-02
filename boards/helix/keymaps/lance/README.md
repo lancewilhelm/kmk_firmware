@@ -1,7 +1,9 @@
 # The Lance Helix Layout
 ## Layout
 
-This layout was inspired by time spent with the Planck and CRKBD (Corne) boards. It adapts a lower layer that contains all numbers and symbols, and places arrow keys at the resting position of the right hand on the raise layer. @
+This layout was inspired by time spent with the Planck and CRKBD (Corne) boards. It adapts a lower layer that contains all numbers and symbols, and places arrow keys at the resting position of the right hand on the raise layer. 
+
+This layout will likely be adapted to changing preference for lower and raise key locations.
 
 ### Qwerty
 
@@ -39,7 +41,7 @@ This layout was inspired by time spent with the Planck and CRKBD (Corne) boards.
  ,-----------------------------------------.             ,-----------------------------------------.
  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |             |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |
  |------+------+------+------+------+------|             |------+------+------+------+------+------|
- |   `  |   1  |   2  |   3  |   4  |   5  |             |   6  |   7  |   8  |   9  |   0  | Del  |
+ |      |   1  |   2  |   3  |   4  |   5  |             |   6  |   7  |   8  |   9  |   0  | Del  |
  |------+------+------+------+------+------|             |------+------+------+------+------+------|
  |      |  F1  |  F2  |  F3  |  F4  |  F5  |             |  F6  |   -  |   =  |   [  |   ]  |  \   |
  |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
