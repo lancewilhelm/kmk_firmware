@@ -80,7 +80,7 @@ class AnimationModes:
     BREATHING_RAINBOW = 5
     KNIGHT = 6
     SWIRL = 7
-    USER = 8
+    USER = 8    # ALWAYS THE LAST MODE. This is necessary for the RGB Mode Cycle function to work properly
 
 
 class RGB(Extension):
@@ -183,6 +183,9 @@ class RGB(Extension):
         )
         make_key(
             names=('RGB_AND',), on_press=self._rgb_and, on_release=handler_passthrough
+        )
+        make_key(
+            names=('RGB_MOD',), on_press=self._rgb_mode_cycle, on_release=handler_passthrough
         )
         make_key(
             names=('RGB_MODE_PLAIN', 'RGB_M_P'),
@@ -404,6 +407,17 @@ class RGB(Extension):
 
         if self._check_update():
             self._do_update()
+
+    def mode_cycle(self):
+        '''
+        Cycles through the available modes in the class AnimationModes
+        '''
+        if (self.user_animation == None and self.animation_mode < (AnimationModes.USER - 1)) or (self.user_animation != None and self.animation_mode < AnimationModes.USER):
+            self.effect_init = True
+            self.animation_mode += 1
+        else:
+            self.effect_init = True
+            self.animation_mode = 1
 
     def off(self):
         '''
