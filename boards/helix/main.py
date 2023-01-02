@@ -18,8 +18,7 @@ split_side = SplitSide.RIGHT
 split = Split(
     use_pio=True,
     uart_flip=True,
-    data_pin=keyboard.data_pin,
-    debug_enabled=True
+    data_pin=keyboard.data_pin
     )
 keyboard.modules.append(split)
 
@@ -90,14 +89,13 @@ keyboard.keymap = [
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC.MNXT, KC.VOLD, KC.VOLU, KC.MPLY
     ],
     [  # ADJUSTs
-      KC.F1,   KC.F2,   KC.F3,   KC.F4,   KC.F5,   KC.F6,                     KC.F7,   KC.F8,   KC.F9,   KC.F10,  KC.F11,  KC.F12,
-      _______,KC.RESET,KC.DEBUG, _______, _______, _______,                   _______, _______, _______, _______, _______, KC.DEL,
-      _______, _______, _______, _______, _______, KC.CG_NORM,             KC.CG_SWAP, QWERTY,  COLEMAK, DVORAK,  _______, _______,
-      _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI,
-      _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RGB_HUD, RGB_SAD, RGB_VAD
+        KC.F1,   KC.F2,   KC.F3,   KC.F4,   KC.F5,   KC.F6,                     KC.F7,   KC.F8,   KC.F9,   KC.F10,  KC.F11,  KC.F12,
+        _______,KC.RESET,KC.DEBUG, _______, _______, _______,                   _______, _______, _______, _______, _______, KC.DEL,
+        _______, _______, _______, _______, _______, KC.CG_NORM,             KC.CG_SWAP, QWERTY,  COLEMAK, DVORAK,  _______, _______,
+        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI,
+        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RGB_HUD, RGB_SAD, RGB_VAD
     ]
 ]
 
 if __name__ == '__main__':
-    print('HELIX, I CHOOSE YOU!')
     keyboard.go()
