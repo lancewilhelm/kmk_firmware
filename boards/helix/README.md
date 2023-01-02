@@ -9,10 +9,6 @@ A compact split ortholinear keyboard.
 
 Copy the `kb.py` and `main.py` files from your preferred keymap folder into your root directory of your keyboard as detailed in the [KMK instructions](http://kmkfw.io/docs/Getting_Started/).
 
-### Current Limitations compared to QMK:
-
-- Serial communication is limited between the two sides of the keyboard. This prevents the transfer of RGB information, or any information other than key presses. More support should come when KMK implements two-way single-wire serial communication.
-
 ## Microcontroller support
 
 Update this line in `kb.py` to any supported microcontroller in `kmk/quickpin/pro_micro`:

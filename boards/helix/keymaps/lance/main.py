@@ -22,10 +22,7 @@ split_side = SplitSide.RIGHT
 split = Split(
     use_pio=True,
     uart_flip=True,
-    split_flip=True,
-    data_pin=keyboard.data_pin,
-    debug_enabled=True,
-    is_target=False
+    data_pin=keyboard.data_pin
     )
 keyboard.modules.append(split)
 
@@ -78,7 +75,7 @@ ADJUST = KC.MO(3)
 
 RGB_TOG = KC.RGB_TOG
 RGB_HUI = KC.RGB_HUI
-RGB_HUD = KC.RGB_HUI
+RGB_HUD = KC.RGB_HUD
 RGB_SAI = KC.RGB_SAI
 RGB_SAD = KC.RGB_SAD
 RGB_VAI = KC.RGB_VAI
