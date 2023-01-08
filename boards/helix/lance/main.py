@@ -97,7 +97,7 @@ keyboard.keymap = [
         KC.TAB,    KC.Q,    KC.W,    KC.E,    KC.R,    KC.T,                       KC.Y,    KC.U,   KC.I,     KC.O,    KC.P, KC.BSPC,
         KC.ESC,    KC.A,    KC.S,    KC.D,    KC.F,    KC.G,                       KC.H,    KC.J,   KC.K,     KC.L, KC.SCLN, KC.QUOT,
         KC.LSFT,   KC.Z,    KC.X,    KC.C,    KC.V,    KC.B, KC.LBRC,  KC.RBRC,    KC.N,    KC.M, KC.COMM,  KC.DOT, KC.SLSH, ENT_SFT,
-        KC.CW,   ADJUST, KC.LALT, KC.LGUI, KC.LCTL,   LOWER,   LOWER,   KC.SPC,   RAISE,   RAISE, KC.LEFT, KC.DOWN,   KC.UP, KC.RGHT
+        KC.CW,   ADJUST, KC.LALT, KC.LGUI, KC.LCTL,   LOWER,  LOWER,   KC.SPC,  KC.SPC,   RAISE, KC.LEFT, KC.DOWN,   KC.UP, KC.RGHT
     ],
     [  # LOWER
         _______, _______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______, _______,
