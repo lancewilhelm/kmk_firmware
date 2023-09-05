@@ -1,10 +1,11 @@
 from kb import KMKKeyboard
+
+from kmk.extensions.media_keys import MediaKeys
+from kmk.extensions.rgb import RGB
 from kmk.keys import KC
+from kmk.modules.cg_swap import CgSwap
 from kmk.modules.layers import Layers
 from kmk.modules.split import Split, SplitSide
-from kmk.modules.cg_swap import CgSwap
-from kmk.extensions.rgb import RGB
-from kmk.extensions.media_keys import MediaKeys
 
 keyboard = KMKKeyboard()
 
@@ -29,9 +30,9 @@ keyboard.extensions.append(MediaKeys())
 cg_swap = CgSwap()
 keyboard.modules.append(cg_swap)
 
-# Layer support``
-layers_ext = Layers()
-keyboard.modules.append(layers_ext)
+# Layer support
+layers = Layers()
+keyboard.modules.append(layers)
 
 # Cleaner key names
 _______ = KC.TRNS
@@ -58,21 +59,21 @@ keyboard.keymap = [
         KC.TAB,  KC.Q,    KC.W,    KC.E,    KC.R,    KC.T,                      KC.Y,    KC.U,    KC.I,    KC.O,    KC.P,    KC.BSPC,
         KC.LCTL, KC.A,    KC.S,    KC.D,    KC.F,    KC.G,                      KC.H,    KC.J,    KC.K,    KC.L,    KC.SCLN, KC.QUOT,
         KC.LSFT, KC.Z,    KC.X,    KC.C,    KC.V,    KC.B,    KC.LBRC, KC.RBRC, KC.N,    KC.M,    KC.COMM, KC.DOT,  KC.SLSH, KC.ENT ,
-        ADJUST,  KC.ESC,  KC.LALT, KC.LGUI,XXXXXXX,   LOWER,   KC.SPC,  KC.SPC,  RAISE, XXXXXXX,  KC.LEFT, KC.DOWN, KC.UP,   KC.RGHT
+        ADJUST,  KC.ESC,  KC.LALT, KC.LGUI, XXXXXXX,   LOWER,   KC.SPC,  KC.SPC,  RAISE, XXXXXXX,  KC.LEFT, KC.DOWN, KC.UP,   KC.RGHT
     ],
     [  # COLEMAK
         KC.GRV, KC.N1,   KC.N2,   KC.N3,   KC.N4,   KC.N5,                      KC.N6,  KC.N7,   KC.N8,   KC.N9,   KC.N0,     KC.DEL,
         KC.TAB,  KC.Q,    KC.W,    KC.F,    KC.P,    KC.G,                      KC.J,    KC.L,    KC.U,    KC.Y,    KC.SCLN, KC.BSPC,
         KC.LCTL, KC.A,    KC.R,    KC.S,    KC.T,    KC.D,                      KC.H,    KC.N,    KC.E,    KC.I,    KC.O,    KC.QUOT,
         KC.LSFT, KC.Z,    KC.X,    KC.C,    KC.V,    KC.B,    KC.LBRC, KC.RBRC, KC.K,    KC.M,    KC.COMM, KC.DOT,  KC.SLSH, KC.ENT ,
-        ADJUST,  KC.ESC,  KC.LALT, KC.LGUI,XXXXXXX,   LOWER,   KC.SPC,  KC.SPC,  RAISE, XXXXXXX,  KC.LEFT, KC.DOWN, KC.UP,   KC.RGHT
+        ADJUST,  KC.ESC,  KC.LALT, KC.LGUI, XXXXXXX,   LOWER,   KC.SPC,  KC.SPC,  RAISE, XXXXXXX,  KC.LEFT, KC.DOWN, KC.UP,   KC.RGHT
     ],
     [  # DVORAK
         KC.GRV, KC.N1,   KC.N2,   KC.N3,   KC.N4,   KC.N5,                      KC.N6,  KC.N7,   KC.N8,   KC.N9,   KC.N0,     KC.DEL,
         KC.TAB,  KC.QUOT, KC.COMM, KC.DOT,  KC.P,    KC.Y,                      KC.F,    KC.G,    KC.C,    KC.R,    KC.L,    KC.DEL,
         KC.LCTL, KC.A,    KC.O,    KC.E,    KC.U,    KC.I,                      KC.D,    KC.H,    KC.T,    KC.N,    KC.S,    KC.SLSH,
         KC.LSFT, KC.SCLN, KC.Q,    KC.J,    KC.K,    KC.X,    KC.LBRC, KC.RBRC, KC.B,    KC.M,    KC.W,    KC.V,    KC.Z,    KC.ENT ,
-        ADJUST,  KC.ESC,  KC.LALT, KC.LGUI,XXXXXXX,   LOWER,   KC.SPC,  KC.SPC,  RAISE, XXXXXXX,  KC.LEFT, KC.DOWN, KC.UP,   KC.RGHT
+        ADJUST,  KC.ESC,  KC.LALT, KC.LGUI, XXXXXXX,   LOWER,   KC.SPC,  KC.SPC,  RAISE, XXXXXXX,  KC.LEFT, KC.DOWN, KC.UP,   KC.RGHT
     ],
     [  # LOWER
         KC.TILD, KC.EXLM, KC.AT,   KC.HASH, KC.DLR,  KC.PERC,                   KC.CIRC, KC.AMPR, KC.ASTR, KC.LPRN, KC.RPRN, _______,
@@ -90,7 +91,7 @@ keyboard.keymap = [
     ],
     [  # ADJUSTs
         KC.F1,   KC.F2,   KC.F3,   KC.F4,   KC.F5,   KC.F6,                     KC.F7,   KC.F8,   KC.F9,   KC.F10,  KC.F11,  KC.F12,
-        _______,KC.RESET,KC.DEBUG, _______, _______, _______,                   _______, _______, _______, _______, _______, KC.DEL,
+        _______, KC.RESET, KC.DEBUG, _______, _______, _______,                   _______, _______, _______, _______, _______, KC.DEL,
         _______, _______, _______, _______, _______, KC.CG_NORM,             KC.CG_SWAP, QWERTY,  COLEMAK, DVORAK,  _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RGB_HUD, RGB_SAD, RGB_VAD
